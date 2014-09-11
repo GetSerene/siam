@@ -1,0 +1,16 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: siam_development
+  pool: 5
+  username: <%= `whoami` %>
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: siam_test
+  pool: 5
+  username: <%= `whoami` %>
+  password:
+  min_messages: WARNING
