@@ -5,6 +5,17 @@ SIAM
 
 Serene Identity and Access Management (SIAM) provides a simple service for service oriented architectures.
 
+Goals
+-----
+- Incredibly easy and quick to integrate into a new Rails 4.2+ project, especially for novice Rails developers
+- Trivial to move to another server
+- Easy rspec integration
+  - Full interface is mocked
+  - Hooks for integration testing
+- Provides single sign on (SSO) across apps
+- Variety of sign on widgets
+
+
 Architecture Notes
 -------------------------
 
