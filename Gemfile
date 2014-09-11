@@ -4,6 +4,7 @@ gem 'byebug', groups: [:development, :test]    # Call 'debugger' anywhere in the
 gem 'coffee-rails', '~> 4.0.0'                 # Use CoffeeScript for .js.coffee assets and views
 gem 'jbuilder', '~> 2.0'                       # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails'                             # Use jquery as the JavaScript library
+gem 'newrelic_rpm'
 gem 'pg'                                       # Use postgresql as the database for Active Record
 gem 'rails', '4.2.0.beta1'                     # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails-html-sanitizer', '~> 1.0'           # Use Rails Html Sanitizer for HTML sanitization
