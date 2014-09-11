@@ -14,6 +14,7 @@ Goals
   - Hooks for integration testing
 - Provides single sign on (SSO) across apps
 - Variety of sign on widgets
+- Multi-factor authentication or at least out of band authentication
 
 
 Architecture Notes
