@@ -5,7 +5,7 @@ gem 'annotate', group: :development
 gem 'byebug', groups: [:development, :test]    # Call 'debugger' anywhere in the code to stop execution and get a debugger console
 gem 'coffee-rails', '~> 4.0.0'                 # Use CoffeeScript for .js.coffee assets and views
 gem 'decent_exposure'
-gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'lm-rails-4-2'
+gem 'devise', github: 'plataformatec/devise', branch: 'lm-rails-4-2'
 gem 'fabrication'
 gem 'faker'
 gem 'jbuilder', '~> 2.0'                       # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

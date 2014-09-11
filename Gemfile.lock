@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/plataformatec/devise.git
+  remote: git://github.com/plataformatec/devise.git
   revision: a6f3f8cb4a24774b897f4c16ea4bb63a2700a5ac
   branch: lm-rails-4-2
   specs:
