@@ -52,3 +52,5 @@ Auth Flow
                                /
       + <---200 session cookie/
 ```
+
+Related: [doorkeeper-provider-app](https://github.com/doorkeeper-gem/doorkeeper-provider-app)
