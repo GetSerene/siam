@@ -24,11 +24,12 @@ Open source replacement for enterprise services from [Amazon](http://aws.amazon.
 
 Stories
 -------
+- developer adds SIAMCLIENT to APPSERVICE
 - APPSERVICE starts up and waits for SIAMSERVER to appear (discovers as soon as it appears)
 - SIAMSERVER moves and APPSERVICE automatically adjusts
 - APPSERVICE registers with SIAMSERVER and gets its credentials
 - APPSERVICE cruds an ACCESSGROUP on the SIAMSERVER for use in APPSERVICE ACLS
-- CLIENT authorizes APPSERVER access PROFILE information
+- CLIENT grants APPSERVER access to PROFILE information
 - APPSERVICE authenticates CLIENT through SIAMSERVER
 - APPSERVICE authorizes CLIENT access to a resource through SIAMSERVER
 
