@@ -22,10 +22,20 @@ Architecture Notes
 
 Open source replacement for enterprise services from [Amazon](http://aws.amazon.com/iam/), [IBM](http://www-935.ibm.com/services/us/en/it-services/security-services/identity-and-access-management-services/), [HP](http://www8.hp.com/us/en/business-services/it-services.html?compURI=1079088#.VBHWEy5dXGw), etc.
 
-Auth Flow
----------
+Stories
+-------
+- APPSERVICE starts up and waits for SIAMSERVER to appear (discovers as soon as it appears)
+- SIAMSERVER moves and APPSERVICE automatically adjusts
+- APPSERVICE registers with SIAMSERVER and gets its credentials
+- APPSERVICE cruds an ACCESSGROUP on the SIAMSERVER for use in APPSERVICE ACLS
+- CLIENT authorizes APPSERVER access PROFILE information
+- APPSERVICE authenticates CLIENT through SIAMSERVER
+- APPSERVICE authorizes CLIENT access to a resource through SIAMSERVER
+
+Authentication Flow
+-------------------
 ```
-    CLIENT                APPSERVER               SIAMSERVER                 
+    CLIENT                APPSERVICE               SIAMSERVER                 
       +-----GET login-------> +
                              /
                             /
