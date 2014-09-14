@@ -1,4 +1,4 @@
-NOTE:  This is work in progress at a very, very early stage ... still in the spiking/designing phase.
+NOTE:  This is work in progress at a very, very early stage ... still in the spiking/designing phase.  You cannot install and use this in your own apps yet.
 
 SIAM
 ====
@@ -32,6 +32,33 @@ Stories
 - CLIENT grants APPSERVER access to PROFILE information
 - APPSERVICE authenticates CLIENT through SIAMSERVER
 - APPSERVICE authorizes CLIENT access to a resource through SIAMSERVER
+
+Installing SIAMCLIENT, using in development
+-------------------------------------------
+
+Add the following to your Gemfile
+```
+gem 'siamclient'
+gem 'siamserver', groups: [:development, :test]
+```
+
+and run
+```
+bundle install
+```
+
+Next create SIAM servers for the development and test environments.  By default the test and development SIAM servers are separate application services running on localhost at different ports than your rails app --- each is backed by a sqlite database.  Your test interactions are automatically recorded by VCR (we recommend checking the cassettes into source control) and the test server is only spun up when a test makes a request that cannot be satisfied by VCR.  By default, service discovery is not enabled in development and test and the ``config/siam.yml`` file contains explicit configuration information used by the servers when they start and the client when connecting. 
+```
+bin/rails generate siam:development
+```
+
+Start your server (if your server is already running you'll need to restart or the development SIAM server won't get started)
+```
+bin/rails s
+```
+
+You should see the siamserver starting up at 3010.  The client library will automatically try to register this application and/or update it with the SIAMSERVER according to the configuration generated in the last step.
+
 
 Authentication Flow
 -------------------
