@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 
 gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'annotate', group: :development
 gem 'byebug', groups: [:development, :test]    # Call 'debugger' anywhere in the code to stop execution and get a debugger console
 gem 'coffee-rails', '~> 4.0.0'                 # Use CoffeeScript for .js.coffee assets and views
@@ -10,6 +11,7 @@ gem 'devise', github: 'plataformatec/devise', branch: 'lm-rails-4-2'
 gem 'doorkeeper'
 gem 'fabrication'
 gem 'faker'
+gem 'haml-rails', '>= 0.5.3'
 gem 'jbuilder', '~> 2.0'                       # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jquery-rails'                             # Use jquery as the JavaScript library
 gem 'newrelic_rpm'
