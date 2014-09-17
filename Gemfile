@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+gem 'dotenv-rails', groups: [:development, :test]
 gem 'annotate', group: :development
 gem 'byebug', groups: [:development, :test]    # Call 'debugger' anywhere in the code to stop execution and get a debugger console
 gem 'coffee-rails', '~> 4.0.0'                 # Use CoffeeScript for .js.coffee assets and views
